@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>WCC Portfolio - Demo Page</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>Cross Asteroid</h1>
+                <h2>by Fei Shan</h6>
+                <p>Cross Asteroid is a simple little game based on gesture recognition. The game is mainly written in P5.js and uses Handpose gesture recognition with ml5.js. It has three levels where the player controls the plane with gestures to make it pass through the meteorite and the game succeeds.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/822441890?h=0d253aaa4d" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+                    
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>A classic game always brings back fond memories. The code defines the way the piece looks and behaves, making it a core element of the work. Is it a game or art for me to digitise a classic game and add creative coding? Cross Asteroid is my attempt to personalise technology.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>‘This game has to have an action element, it can't be too simple, it's probably about controlling something that moves around the screen ...Yes, controlling a spaceship!’ says Martin Graetz, one of the designers of Spacewar.
+                    I was inspired by Spacewar, the world's first entertaining video game, which was created in 1962 and displayed on a cathode ray tube display. The game's graphics are simple, with little triangles on the screen representing spaceships that are forever orbiting a decaying sun, looking like little piles of building blocks. Each player controls one of two spaceships, with a central star applying gravity to the ship. A limited number of photon torpedoes are fired to destroy opponents. The game ends when either ship explodes or both ships run out of torpedoes.</p>
+                <p>Inspired by Cory Arcangel's work Supermario Clouds, I wanted to present a sense of nostalgia by reusing outdated systems and games.
+                    
+                    Spacewar is a game created to demonstrate the program of new computer features. It is a symbol of the original computer visualisation game, whose game code has also been rebuilt on other computers. So I wanted to take the video game, re-parsed and re-coded it to present it to the audience.
+                    
+                    Multiple values can be attributed to the code...while being an invisible element in itself, the code also determines the aesthetic properties of the visual content(Emilie, 2015).
+                    The code defines the looks and behaviours of the piece, making it the core element. So I rewrote the entire code to create a new game scene. Compared to Spacewar, which is much more digital. What's more, I used a new technology - gesture recognition. The player can use gestures to control the direction of the plane. This is a change in the way the game is interacted with. The technology is now not limited to simple interaction with the mouse and keyboard, but the player can use various postures to interact with the game. When creating the scenery, I changed the original style of the game to flat 2D graphics to add interest. In a way, this is my attempt to personalise the technology. A collective memory with a touch of humour, it gives people the opportunity to experience and think about the technology that often serves as inspiration for art and influences our daily lives from a different perspective.</p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/Spacewar_screenshot.jpeg"/>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <!-- example of styling for three images, you can write your own styling -->
+            
+                
+                <p>In the game, I used gesture recognition to control the aircraft, controlling the direction of the aircraft based on the position of one hand. With what is available, I intend to use ml5.js. It is a very easy-to-use interface based on Tensorflow.js to make machine learning easier for a wider audience. Among other things, Handpose is a machine-learning model that allows palm detection and skeletal finger tracking of the hand in the browser. Due to the instability of the computer camera, I intend to use arrows to represent the direction of the gesture, so that the player understands more clearly where the plane is going.
+
+                    The game fails after the plane has come into contact with a planet, and object-to-object collisions are involved. I have modified some code by referring to Jeff Thompso's COLLISION DETECTION, and I have also referred to Benmoren's code.
+                    In terms of game beautification. The main thing is the background. In Spacewar, the scene is drawn against the backdrop of a realistically depicted moving starfield. I wanted to beautify it, so I used the code knowledge I had learned last semester. </p>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/code1.jpg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/code2.jpg"/>
+                    </div>
+                </div>
+
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>It is my first attempt at using gesture recognition for a game. I found ml5.js to be a relatively easy site to learn gesture recognition. But this is only my first attempt in p5.js, and the gesture capture by the computer camera is still not very accurate since it's often affected by the environment. In the future, I would like to use Leap Motion, combined with Unity, to make gesture-recognition VR games. This would allow the player to experience the game immersively, without being limited to space.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>
+                        Code references:
+                        https://openprocessing.org/sketch/1772196
+                        https://github.com/bmoren/p5.collide2D/  Created by http://benmoren.com
+                        Some functions and code modified version from http://www.jeffreythompson.org/collision-detection</li>
+                    <li>Emilie, M. Defining an Ethical Framework for Preserving Cory Arcangel’s Super Mario Clouds. The Electronic Media Review. 2015. 60</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
