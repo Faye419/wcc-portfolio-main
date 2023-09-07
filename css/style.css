@@ -21,6 +21,9 @@ main.documentation-page h3{
     margin-top: 40px;
 }
 
+main.documentation-page h4{
+    margin-top: 20px;
+}
 li{
     font-family: Helvetica, sans-serif;
     font-size: 16px;

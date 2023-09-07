@@ -35,22 +35,28 @@
             </section>
             <section>
                 <h3>Introduction</h3>
-                <p>A classic game always brings back fond memories. The code defines the way the piece looks and behaves, making it a core element of the work. Is it a game or art for me to digitise a classic game and add creative coding? Cross Asteroid is my attempt to personalise technology.</p>
+                <p>FISH LOVE YOU is an interactive installation which creates ambiguous identities through new species of thousands of human and fish faces trained by StyleGAN. It embodies the equal relationship between humans and creatures from the perspective of artificial intelligence (AI). Meanwhile, the interaction between the goldfish and the viewer and the short film on the small screen create a sensual atmosphere. I hope that technology will help us understand fish and expand the sensory interaction between humans and fish. 
+                    Finally, this project suggests a shift from anthropocentrism to a post-humanism worldview, advocating a new form of coexistence between humans and nature. 
+                    </p>
             </section>
             <section>
                 <h3>Concept and Background Research</h3>
+                <h4>Animism </h4>
+                <p> Animism beliefs recognize that all things in this world are intelligent and have agency.(Yolanda, 2021)
+                    Animism facilitates an empathic rather than anobjective mechanistic and reductionstic approach to human health and prosperity. (Fox, 1995)
+                    Therefore, all living things have spirit, and fish have their own spirit and soul. What we meet daily are meaningful objects, which means they have been endowed with significance by the spirit. Every individual has its identity and is not food or pet for human to their life purpose.
+                    Animism therefore requires a strong sense of compassion.(Russell, 2020) Empathy, on the other hand, is the most primitive communication technique of all things.
+                    Therefore, I focused on the emotional connection between humans and fish to evoking empathy for fish. Firstly, it is important to promote an equal relationship between humans and fish.…another aspect of the nature/culture binary, one that has positioned humans as expressive agents (active) and to position nonhumans as those with nothing to express (passive)…One of the problems has been that of equating communication, or expression, with language. (Rose, 2013)
+                    It has always been the case that the goldfish as a pet represents the object, the one being viewed by the human (the subject). This relationship goes back to a human-centred in the environment. However, I believe that under the concept of biological equality, this subject-object relationship should be weakened, in short, realising that while we are viewing the goldfish, people are also being gazed at by them. It's a two-way communication and emotional output that has nothing to do with language.
+                    </p>
+                    <h4>Anthropocentrism to post-humanism </h4>
+                <p> Anthropocentrism literally means human-centered…In contradistinction, all other beings hold value only in their ability to serve humans, or in their instrumental value.(Goralnik,2012)
+                    I have not used non-anthropocentris here, which in my opinion cannot be understood as an exclusionary concept, but rather as an expansive one, which means it denotes the centrality of a wider range of objects (all higher animals, all living organisms, or entire ecosystems), including human beings.
+                    For a long time, we thought we were the masters of the world. But now we are discovering that even fungi can have their own way of communicating, so the anthropocentric way we imagined is an outdated notion. According to post-humanism, we need to stop thinking of ourselves as superior to other creatures on earth and accept that we are part of nature.
+                    ...The human face evolved from the fish face.(Yan, 2016) According to the theory, I thought about the similarities between humans and fish. So I used StyleGAN to mix fish and human images as a dataset, had the AI recognise this mixed dataset in the same way it learns faces, and then observed the AI's vision of the images as it learnt them.
+                    Characters and fish elemental amalgamated forms are again vague identities compared to absolute specific characters. The aim is to address our tendency to see our species as unique and distinct from other life forms.</p>
                 
-                <p>‘This game has to have an action element, it can't be too simple, it's probably about controlling something that moves around the screen ...Yes, controlling a spaceship!’ says Martin Graetz, one of the designers of Spacewar.
-                    I was inspired by Spacewar, the world's first entertaining video game, which was created in 1962 and displayed on a cathode ray tube display. The game's graphics are simple, with little triangles on the screen representing spaceships that are forever orbiting a decaying sun, looking like little piles of building blocks. Each player controls one of two spaceships, with a central star applying gravity to the ship. A limited number of photon torpedoes are fired to destroy opponents. The game ends when either ship explodes or both ships run out of torpedoes.</p>
-                <p>Inspired by Cory Arcangel's work Supermario Clouds, I wanted to present a sense of nostalgia by reusing outdated systems and games.
-                    
-                    Spacewar is a game created to demonstrate the program of new computer features. It is a symbol of the original computer visualisation game, whose game code has also been rebuilt on other computers. So I wanted to take the video game, re-parsed and re-coded it to present it to the audience.
-                    
-                    Multiple values can be attributed to the code...while being an invisible element in itself, the code also determines the aesthetic properties of the visual content(Emilie, 2015).
-                    The code defines the looks and behaviours of the piece, making it the core element. So I rewrote the entire code to create a new game scene. Compared to Spacewar, which is much more digital. What's more, I used a new technology - gesture recognition. The player can use gestures to control the direction of the plane. This is a change in the way the game is interacted with. The technology is now not limited to simple interaction with the mouse and keyboard, but the player can use various postures to interact with the game. When creating the scenery, I changed the original style of the game to flat 2D graphics to add interest. In a way, this is my attempt to personalise the technology. A collective memory with a touch of humour, it gives people the opportunity to experience and think about the technology that often serves as inspiration for art and influences our daily lives from a different perspective.</p>
-                
-                <!-- if you have a full width image try make it not too tall -->
-                <img src="../assets/images/Spacewar_screenshot.jpeg"/>
+            
                 
             </section>
             <section>
@@ -58,19 +64,31 @@
 
                 <!-- example of styling for three images, you can write your own styling -->
             
-                
-                <p>In the game, I used gesture recognition to control the aircraft, controlling the direction of the aircraft based on the position of one hand. With what is available, I intend to use ml5.js. It is a very easy-to-use interface based on Tensorflow.js to make machine learning easier for a wider audience. Among other things, Handpose is a machine-learning model that allows palm detection and skeletal finger tracking of the hand in the browser. Due to the instability of the computer camera, I intend to use arrows to represent the direction of the gesture, so that the player understands more clearly where the plane is going.
-
-                    The game fails after the plane has come into contact with a planet, and object-to-object collisions are involved. I have modified some code by referring to Jeff Thompso's COLLISION DETECTION, and I have also referred to Benmoren's code.
-                    In terms of game beautification. The main thing is the background. In Spacewar, the scene is drawn against the backdrop of a realistically depicted moving starfield. I wanted to beautify it, so I used the code knowledge I had learned last semester. </p>
+                <h4>Body Recognition </h4>
+                <p> I purchased a model of a fish with texture from a website, but when I opened it I found the texture very confusing. So I retextured it and did a 5-second swimming animation. Then I rendered it with the OC renderer. I remember that I spent a lot of time debugging OC renderer, because the fish's body is too red to see the details.
+                    Finally, I used PROCESSING to make the webcam capture the viewer's body movement. I want to have different-sized fish move following the viewer's movement.  </p>
             
+                    <h4>StyleGAN  </h4>
+                    <p> At first, I wanted to use Diffusion and pix2pix to generate the video. Diffusion could linguistically generate some combination of patterns and faces, but it wasn't random and couldn't illustrate my concept, so I dropped the idea.
+                        Try Diffusion 
+                        
+                        I was very clear about the effect I wanted to achieve - a hybrid of human faces and fish faces. I searched for the dataset on Kaggle. However, I encountered some difficulties while looking for fish faces.
+                        At first, I trained with 600 fish. Due to few samples and complex backgrounds, StyleGAN2 couldn't distinguish the backgrounds and faces. 
+                        So, I found more than 1,500 fish faces with plain backgrounds on Instagram and used code to cut out the images to normalize the images to be uniform. 
+                        Despite many attempts, StyleGAN2 was not worked well, so I decided to use StyleGAN1. Unlike StyleGAN2, StyleGAN1 is trained from 4*4 *8 16*16 32*32 64*64 128*128 256*256 size by size. The source code reference for StyleGAN1 is from Kim Seonghyeon.
+                        </p>
+
+                        <h4>Video </h4>
+                        <p> I made a short film to show the relationship between humans and humans, humans and fish, and fish and fish. I isnvited my classmates to star in the film, and the empty footage was shot by me on the beach in China. Finally, I spent a week editing the video on PR.</p>
+
+
                 <!-- example of styling for three images, you can write your own styling -->
                 <div class="flex-container flex-basis-half">
                     <div class="flex-item">
-                        <img src="../assets/images/code1.jpg"/>
+                        <img src="../assets/images/processing.jpg"/>
                     </div>
                     <div class="flex-item">
-                        <img src="../assets/images/code2.jpg"/>
+                        <img src="../assets/images/stylegan.jpg"/>
                     </div>
                 </div>
 
@@ -78,18 +96,37 @@
             </section>
             <section>
                 <h3>Reflection and Future Development</h3>
-                <p>It is my first attempt at using gesture recognition for a game. I found ml5.js to be a relatively easy site to learn gesture recognition. But this is only my first attempt in p5.js, and the gesture capture by the computer camera is still not very accurate since it's often affected by the environment. In the future, I would like to use Leap Motion, combined with Unity, to make gesture-recognition VR games. This would allow the player to experience the game immersively, without being limited to space.</p>
+                <p>I'm generally satisfied with the work. It was a new experiment and challenge because I didn't take related courses. I learnt about StyleGAN and became interested in hybrid organisms, which will be a new direction for me. 
+                    Unfortunately, I didn't use StyleGAN2 due to my computer configuration and dataset, so the presentation was not as good as expected. Moreover, the number of samples of my fish and faces did not match, resulting in most randomly generated ones still being faces. In addition, according to the feedback, my camera couldn't recognise the human body due to the dark light, which reminds me to do more tests on the display in the future.
+                    Regarding the exhibition, my teacher suggested that I put the iPad on the other wall so that the audience would have a multi-dimensional viewing perspective.
+                    Finally, I hope to have time to learn Arduino so that the audience can interact with the fish tank. Adding interactivity is my goal.</p>
             </section>
             <section>
                 <h3>References</h3>
                 <ul>
                     <li>
-                        Code references:
-                        https://openprocessing.org/sketch/1772196
-                        https://github.com/bmoren/p5.collide2D/  Created by http://benmoren.com
-                        Some functions and code modified version from http://www.jeffreythompson.org/collision-detection</li>
-                    <li>Emilie, M. Defining an Ethical Framework for Preserving Cory Arcangel’s Super Mario Clouds. The Electronic Media Review. 2015. 60</li>
-                </ul>
+                        Fox, M. W. (1995). Animism, Empathy and Human Development. Between the Species, 11(1), 2.
+Rose, D. B. (2013). Val Plumwood's philosophical animism: Attentive interactions in the sentient world. Environmental humanities, 3(1), 93-109.
+Russell, M. (2020). What Does Indigenous Animism Teach Us About Well-Being And Compassion. Synthesis.
+L. Goralnik, M.P. Nelson, (2012). in Encyclopedia of Applied Ethics (Second Edition)
+Yan, J. (2016). Evolutionary patterns revealed by fish faces resembling human faces. Encyclopaedia of Knowledge (000-013).
+Yolanda M.(2021). Animism and Nature Reverence. Spiritualityhealth.
+
+Code references
+https://www.turbosquid.com/3d-models/3d-model-rigged-goldfish-normal-displacement/1052691
+https://github.com/rosinality?tab=repositories
+https://github.com/rosinality/style-based-gan-pytorch
+https://scholar.google.com/citations?user=EOVjCGkAAAAJ&hl=en
+
+Proceessing code reference
+Java example- Animated Sprite (Shifty + Teddy)* by James Paterson
+
+Eye background recource
+https://www.bilibili.com/video/BV1Gv4y1g7uZ/?spm_id_from=333.880.my_history.page.click&vd_source=bbad0ccbb557fdd4d3f08c32f1d66a29
+
+Sea video recource
+https://www.youtube.com/watch?v=RIU7T4QCI4Q&list=PLawCfm1mGGLJZTY1DFzw9LNqkV6ERGe-v&index=24</li>
+                    
             </section>
         </main>
 
